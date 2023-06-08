@@ -13,9 +13,13 @@ Pseudo - used in governance contracts  allow governance to interact with the con
 .commands to run the wasmdd node.
 
 ./wasmd init wasmnode --chain-id=wasm_904-3 
-./wasmd keys add bob --keyring-backend test                                                    
+
+./wasmd keys add bob --keyring-backend test  
+
 ./wasmd genesis add-genesis-account bob 10000000000000000000000000000000000token,10000000000000000000000000000000000stake --keyring-backend test
+
 ./wasmd genesis gentx bob 100000000000000000stake --keyring-backend test 
+
 ./wasmd genesis collect-gentxs 
 
 
